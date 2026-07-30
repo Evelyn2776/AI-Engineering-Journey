@@ -1,3 +1,6 @@
+# Date
+Thursday, 30th July 2026.
+
 # What does input() do?
 The pyhton built-in function 'input()' allow users to give an input or write your indiviual answer into the code.
 
