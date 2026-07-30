@@ -1,7 +1,7 @@
 # Day 001
 
 ## Date
-July 27, 2026
+Monday, 27th July 2026
 
 ## Lesson
 Development Environment Setup
