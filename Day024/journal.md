@@ -1,0 +1,11 @@
+# Imagine you are building an AI chatbot that tracks conversation history and token usage. How could encapsulation help protect and manage this information?
+Encapsulation serves as a critical defense mechanism when building an AI chatbot. Encapsulation helps control access to conversation history and token usage, reducing accidental modification and keeping the chatbot's internal state consistent.
+Here is exactly how encapsulation protects and manages these two sensitive buckets of information:
+1. Protecting Conversation History from Corruption
+An LLM relies entirely on a perfectly formatted, chronological array of messages to understand context. If external code can freely tamper with that array, your AI application will fail. 
+Without Encapsulation: Any part of your software could accidentally reorder the messages, insert invalid data structures, or wipe out the system prompt. This results in the LLM throwing immediate API errors or completely losing its personality.
+With Encapsulation: You hide the history array behind a private marker (e.g., self.__history). The rest of your application cannot touch it directly. Instead, they must call a public method like .add_user_message(text). Inside that method, you can run automatic validation checksâ€”such as stripping out harmful scripts or verifying the text isn't emptyâ€”before the data is officially added to the history. 
+2. Safeguarding Token Usage and Financial Budgets
+Token counts track your real-time financial overhead. If these values are left exposed, your application cannot accurately gauge its operational spending or handle rate limiting. 
+Without Encapsulation: External functions could accidentally reset your total_tokens counter back to zero or manually overwrite the value. This blinds your system to your true usage, potentially running up massive, unexpected bills with your AI provider.
+With Encapsulation: You make the token counter private (e.g., self.__token_count = 0). You expose a read-only public method called .get_total_tokens(), but you completely omit any method that allows external code to rewrite or modify that number. The only thing allowed to update the token count is the internal .send_to_llm() method immediately after a verified API response returns.
