@@ -24,5 +24,4 @@ try:
                 print("Try again")
             
 except KeyboardInterrupt as error:
-    print("Try again", error)
-
+    print("Try again", error) 
