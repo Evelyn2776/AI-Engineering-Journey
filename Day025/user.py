@@ -16,4 +16,3 @@ class Student (User):
 
     def study (self):
         print(f"I am studying to become an {self.career}.")
-        
