@@ -1,0 +1,2 @@
+# How does decision-making make programs more useful?
+Decision-making makes programs more useful because they can respond differently depending on the user's input instead of always producing the same output.

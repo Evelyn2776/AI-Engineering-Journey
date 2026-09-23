@@ -1,0 +1,10 @@
+# Ignore the environment variables file (contains API keys/secrets)
+.env
+
+# Ignore the virtual environment folder
+.venv/
+venv/
+
+# Ignore Python bytecode cache files
+**/__pycache__/
+*.pyc

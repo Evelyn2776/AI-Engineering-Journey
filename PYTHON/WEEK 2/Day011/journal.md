@@ -1,0 +1,4 @@
+# How could file handling be useful in an AI application? Give one practical example.
+File handling is essential in AI applications for logging user prompts and model responses to create a continuous fine-tuning dataset. By automatically appending each interaction to a file, developers can permanently store raw data to train and improve the AI model later.
+A Practical Example: Continuous Chatbot Fine-Tuning
+An AI customer service chatbot needs to capture its actual conversations so engineers can review mistakes and upgrade the model's accuracy. Because keeping thousands of conversations in the computer's temporary memory (RAM) would cause a crash, the AI application uses file handling to continuously save data to a permanent disk

@@ -1,0 +1,5 @@
+print("My name is Evelyn")
+print("I am from Nigeria")
+print("My goal is to learn and use python programming language seamlessly")
+print("I am learning AI Engineering because that is career path i want to pursue")
+print("Message to my future self: I hope you are successful in whatever you want to achieve, both in your career and other aspects of life")

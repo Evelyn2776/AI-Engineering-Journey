@@ -1,0 +1,2 @@
+# What surprised you most about today's lesson?
+I found out that just because python translates human language to machine language doesn't mean that python itself understands human language. It still needs human to arrange their language or explain it very well by using built-in methods. And it is important that the instruction is written sequentially.
